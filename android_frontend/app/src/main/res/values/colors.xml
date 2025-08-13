@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Palette from the work item -->
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorSecondary">#424242</color>
+    <color name="colorAccent">#FFC107</color>
+
+    <!-- Additional neutrals -->
+    <color name="colorPrimaryVariant">#1565C0</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+</resources>

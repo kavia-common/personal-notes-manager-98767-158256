@@ -1,0 +1,17 @@
+tasks.register("check") {
+    // Delegate to the included Android build modules
+    dependsOn(gradle.includedBuild("android_frontend").task(":app:check"))
+    dependsOn(gradle.includedBuild("android_frontend").task(":utilities:check"))
+    dependsOn(gradle.includedBuild("android_frontend").task(":list:check"))
+}
+
+tasks.register("build") {
+    dependsOn(gradle.includedBuild("android_frontend").task(":app:build"))
+    dependsOn(gradle.includedBuild("android_frontend").task(":utilities:build"))
+    dependsOn(gradle.includedBuild("android_frontend").task(":list:build"))
+}
+
+// Convenience tasks that many CI pipelines call
+tasks.register("assembleDebug") {
+    dependsOn(gradle.includedBuild("android_frontend").task(":app:assembleDebug"))
+}

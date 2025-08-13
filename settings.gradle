@@ -1,0 +1,12 @@
+pluginManagement {
+    repositories {
+        google()
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "personal-notes-manager"
+
+// Include the Android app build defined under android_frontend (uses declarative Gradle DSL)
+includeBuild("android_frontend")
